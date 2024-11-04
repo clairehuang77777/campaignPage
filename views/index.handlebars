@@ -1,0 +1,107 @@
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="bundle.js"></script>
+</head>
+<body>
+<div class="campaignPage-section">
+  <!--左邊區域-->
+  <div class="left-section">
+    <div class="container">
+      <div class="left-wrapper">
+        <div class="logo-area">
+          <img src="./icons/logo.svg" alt="alphacamp-logo" class="alphacamp-logo">
+        </div>
+        <div class="space1">
+        </div>
+        <div class="icon-area">
+          <div class="table-icon">
+              <input type="checkbox" id="toggle" class="toggle-checkbox">
+              <label for="toggle">
+                <img src="./icons/frame.svg" alt="tableicon" class="tableicon">
+              </label>
+          </div>
+          <div class="file-icon">
+            <img src="./icons/folder.svg" alt="fileicon" class="fileicon">
+          </div>
+          <div class="mail-icon">
+            <img src="./icons/mail.svg" alt="mailicon" class="mailicon">
+          </div>
+          <div class="dark-icon">
+            <img src="./icons/darkmode-on.svg" alt="darkmodeicon" class="darkmodeicon">
+          </div>
+        </div>
+        <div class="space2"></div>
+      </div>
+    </div>
+  </div>
+  <!--右邊區域-->
+  <div class="right-section">
+    <!--右上title區域-->
+    <div class="page-title-area">
+      <div class="title-container">
+        <div class="title-campaign">
+          Campaign
+        </div>
+      </div>
+    </div>
+    <!--右下表格區域-->
+    <div class="table-area">
+      <div class="table-container">
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th><img src="./icons/checkbox.svg" alt="框框"></th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Advertiser</th>
+                <th>Description</th>
+                <th class="price">Price <img src="./icons/sort.svg" alt="sort" class="price-sort-img"></th>
+                <th>Start Time    <img src="./icons/sort.svg" alt="sort" class="starttime-sort-img"></th>
+                <th>End Time    <img src="./icons/sort.svg" alt="sort" class="endtime-sort-img"></th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            {{#each rowlist}}
+            <tbody>
+              <tr>
+                <td class="check">
+                  <div class="checkboxdiv">
+                    <input type="checkbox" id="checkmark{{this}}" class="checkmark">
+                    <label for="checkmark{{this}}" class="checkmark{{this}}">
+                      <img src="./icons/checkbox.svg" alt="框框" class="checkbox{{this}}">
+                    </label>
+                  </div>
+                </td>
+                <td>1</td>
+                <td>Christmas 2020</td>
+                <td>Food market</td>
+                <td>Holly night during Christmas</td>
+                <td>$2000</td>
+                <td>2020/12/24 19:30</td>
+                <td>2021/01/02 23:00</td>
+                <td>
+                  <div class="menuaction">
+                    <input type="checkbox" id="menutoggle{{this}}" class="menutoggle">
+                    <label for="menutoggle{{this}}">
+                      <img src="./icons/menu.svg" alt="menu" class="menuicon">
+                    </label>
+                    <div class="actionarea{{this}}">
+                      <ul class="editzone">
+                        <li class="duplicate">Duplicate</li>
+                        <li class="edit">Edit</li>
+                        <li class="delete">Delete</li>
+                      </ul>
+                    </div>                  
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            {{/each}}
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

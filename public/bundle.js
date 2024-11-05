@@ -9,17 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/style/stylesheet.scss":
-/*!***********************************!*\
-  !*** ./src/style/stylesheet.scss ***!
-  \***********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://icons/./src/style/stylesheet.scss?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -37,7 +26,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*********************************/
 /***/ (() => {
 
-eval("\nfunction togglebackground(event){\n  const checkarea = event.target\n  const tbody = checkarea.closest(\"tbody\")\n\n  if (checkarea.checked) {\n    tbody.style.backgroundColor = '#FFA500'\n    console.log(tbody.style.backgroundColor)\n  } else {\n    tbody.style.backgroundColor = ''\n  }\n}\n\ndocument.addEventListener('DOMContentLoaded',() => {\nconst checkboxs = document.querySelectorAll('.checkmark');\n  checkboxs.forEach((checkbox) => \n    (checkbox.addEventListener('click', togglebackground))\n    )\n})\n\n\n//# sourceURL=webpack://icons/./src/togglebackground.js?");
+eval("function togglebackground(event) {\n  var checkarea = event.target;\n  var tbody = checkarea.closest(\"tbody\");\n  if (checkarea.checked) {\n    tbody.style.backgroundColor = '#FFA500';\n    console.log(tbody.style.backgroundColor);\n  } else {\n    tbody.style.backgroundColor = '';\n  }\n}\ndocument.addEventListener('DOMContentLoaded', function () {\n  var checkboxs = document.querySelectorAll('.checkmark');\n  checkboxs.forEach(function (checkbox) {\n    return checkbox.addEventListener('click', togglebackground);\n  });\n});\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  var darkIcon = document.querySelector(\".dark-icon\");\n  if (darkIcon) {\n    // 綁定點擊事件\n    darkIcon.addEventListener(\"click\", toggleDarkMode);\n  } else {\n    console.error(\"未找到 .dark-icon 元素\");\n  }\n\n  //被點擊後要做什麼\n  function toggleDarkMode() {\n    var body = document.querySelector(\"body\");\n    if (body.hasAttribute(\"data-mode\")) {\n      body.removeAttribute(\"data-mode\");\n    } else {\n      body.setAttribute(\"data-mode\", \"dark\");\n    }\n  }\n});\n\n//# sourceURL=webpack://icons/./src/togglebackground.js?");
+
+/***/ }),
+
+/***/ "./src/style/stylesheet.scss":
+/*!***********************************!*\
+  !*** ./src/style/stylesheet.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://icons/./src/style/stylesheet.scss?");
 
 /***/ })
 

@@ -11,11 +11,20 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/, // 處理 .js 檔案
+        use: {
+          loader: 'babel-loader', // 解析ES6語法
+          options: {
+            presets:['@babel/preset-env'], //使用babel預設環境
+          }     
+        }
+      },
+      {
         test: /\.scss$/, // 處理 .scss 檔案
         use: [
           MiniCssExtractPlugin.loader, // 提取 CSS 到單獨文件
           'css-loader',                // 解析 CSS
-          'sass-loader'                // 將 Sass 編譯成 CSS
+          'sass-loader',                // 將 Sass 編譯成 CSS
         ]
       }
     ]

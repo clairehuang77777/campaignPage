@@ -11,8 +11,11 @@ It's a campaign backend page.
 3. User can click action button on each row, and see three different actions (Duplicate/Edit/Delete).
 <br>
 
-![feature3](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWJiendyb3lqa3Bqc3dvMmN0bnJyOGY1dHE4dHlqMXFxc3ZmaWJ2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uGTAjdB7dJ1sePFAvZ/giphy.gif)
+![feature3](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWJiendyb3lqa3Bqc3dvMmN0bnJyOGY1dHE4dHlqMXFxc3ZmaWJ2MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uGTAjdB7dJ1sePFAvZ/giphy.gif)<br>
+4. User can click toggle to switch default mode / dark mode.
+<br>
 
+![feature4](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjdid25jcXpmdHRqYzZxM3J5NHVuajl5ZDEyNnJxb3JhZnRxOGNpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OqecjuHWNfGbP01tRj/giphy.gif)
    
 ### -- Built with
 - Node.js
